@@ -340,3 +340,14 @@ body a, button, .btn {
 .latest-posts-grid-left ul.post-date li, .latest-posts-grid-left ul.post-date1 li a, .latest-posts-grid-left ul.post-date2 li a{
     font-size: 13.5px;
 }
+
+
+/* instagram */
+
+.text-ig{
+    color: black; 
+    font-size: 10pt; 
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 0;
+}
