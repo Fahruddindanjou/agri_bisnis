@@ -24,7 +24,7 @@
 }
 
 .navbar-nav{
-    margin: 10px;
+    margin: 0px;
 }
 
 .active-nav > a{
@@ -374,4 +374,16 @@ body a, button, .btn {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.horse1{
+    background:url(assets/images/img-sp.png) no-repeat -7px -52px;
+}
+
+.horse2{
+    background:url(assets/images/img-sp.png) no-repeat -8px -98px;
+}
+
+.horse3{
+    background:url(assets/images/img-sp.png) no-repeat -1px -153px;
 }

@@ -33,7 +33,7 @@ body a:hover{
 	-ms-transition:.5s ease-in-out;
 }
 .banner{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background:url(../assets/images/banner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -44,7 +44,7 @@ body a:hover{
     position: relative;
 }
 .banner1{
-	background:url(../images/14.jpg) no-repeat 0px 0px;
+	background-image:url(assets/14.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -83,7 +83,7 @@ body a:hover{
 .search input[type="submit"] {
     outline: none;
     width:14%;
-    background: url(../images/img-sp.png) no-repeat 3px 4px;
+    background: url(assets/images/img-sp.png) no-repeat 3px 4px;
     border: 1px solid #fff;
     padding: 8px 0 10px;
 }
@@ -593,13 +593,13 @@ ul.wmuSliderPagination {
     line-height: 1.8em;
 }
 .pa_italic label.horse1 {
-	background:url(../images/img-sp.png) no-repeat -7px -52px;
+	background:url(assets/images/img-sp.png) no-repeat -7px -52px;
 }
 .pa_italic label.horse2 {
-	background:url(../images/img-sp.png) no-repeat -8px -98px;
+	background:url(assets/images/img-sp.png) no-repeat -8px -98px;
 }
 .pa_italic label.horse3 {
-	background:url(../images/img-sp.png) no-repeat -1px -153px;
+	background:url(assets/images/img-sp.png) no-repeat -1px -153px;
 }
 .scrollbar{
 	height: 100px;
@@ -626,7 +626,7 @@ ul.wmuSliderPagination {
 /*-- //banner-bottom --*/
 /*-- services --*/
 .services{
-	background:url(../images/banner2.jpg) fixed;
+	background:url(assets/images/banner2.jpg) fixed;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -906,7 +906,7 @@ transform: scale(1,1);
 	position:absolute;
 	bottom: -1%;
     right:-46.4%;
-	background:url(../images/1.png) no-repeat 0px 0px;
+	background:url(assets/images/1.png) no-repeat 0px 0px;
 	display:block;
 	width:300px;
 	height:254px;
@@ -1118,31 +1118,31 @@ ul.social li{
   font-size: 1.5rem;
 }
 .social li a.social-linkedin i{
-	background:url(../images/img-sp.png) no-repeat -3px -225px;
+	background:url(assets/images/img-sp.png) no-repeat -3px -225px;
 	display:block;
 	width:20px;
 	height:14px;
 }
 .social li a.social-twitter i{
-	background:url(../images/img-sp.png) no-repeat -39px -225px;
+	background:url(assets/images/img-sp.png) no-repeat -39px -225px;
 	display:block;
 	width:20px;
 	height:14px;
 }
 .social li a.social-google i{
-	background:url(../images/img-sp.png) no-repeat -84px -225px;
+	background:url(assets/images/img-sp.png) no-repeat -84px -225px;
 	display:block;
 	width:20px;
 	height:14px;
 }
 .social li a.social-facebook i{
-	background:url(../images/img-sp.png) no-repeat -114px -225px;
+	background:url(assets/images/img-sp.png) no-repeat -114px -225px;
 	display:block;
 	width:20px;
 	height:14px;
 }
 .social li a.social-instagram i{
-	background:url(../images/img-sp.png) no-repeat -153px -225px;
+	background:url(assets/images/img-sp.png) no-repeat -153px -225px;
 	display:block;
 	width:20px;
 	height:14px;
@@ -1245,7 +1245,7 @@ ul.social li{
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url(../images/arrow.png) no-repeat 0px 0px;
+	background: url(assets/images/arrow.png) no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
@@ -1275,7 +1275,7 @@ ul.social li{
 }
 .banner1-info h3:before{
 	content:'';
-	background:url(../images/img-sp.png) no-repeat -6px -263px;
+	background:url(assets/images/img-sp.png) no-repeat -6px -263px;
 	display:block;
 	width:32px;
 	height:32px;
@@ -1349,7 +1349,7 @@ ul.social li{
 	font-size:14px;
 }
 .text-right ul li{
-	background: url(../images/img-sp.png) no-repeat -69px -265px;
+	background: url(assets/images/img-sp.png) no-repeat -69px -265px;
     list-style-type: none;
     margin-bottom: 1em;
     font-size: 1em;
@@ -1362,7 +1362,7 @@ ul.social li{
     letter-spacing: 2px;
 }
 .about-bottom{
-	background:url(../images/17.jpg) fixed;
+	background:url(assets/images/17.jpg) fixed;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1988,7 +1988,7 @@ h2.typoh2{
 }
 .categories ul li,.single-left2-left ul li{
 	list-style-type: none;
-    background: url(../images/img-sp.png) no-repeat -204px -221px;
+    background: url(assets/images/img-sp.png) no-repeat -204px -221px;
     padding-left: 2.5em;
     display: block;
     margin-bottom: 1em;
@@ -2124,7 +2124,7 @@ nav.paging1{
 	top:0%;
 	left:0%;
 	content:'';
-	background:url(../images/img-sp.png) no-repeat -6px -263px;
+	background:url(assets/images/img-sp.png) no-repeat -6px -263px;
 	width:32px;
 	height:32px;
 	display:block;
@@ -2346,7 +2346,7 @@ nav.paging1{
 		padding: 5px;
 	}
 	.pa_italic label.horse3 {
-		background: url(../images/img-sp.png) no-repeat -1px -99px;
+		background: url(assets/images/img-sp.png) no-repeat -1px -99px;
 		background-size: 60%;
 	}
 	.banner-bottom-grid-left-pos {
@@ -2547,7 +2547,7 @@ nav.paging1{
 		left: 37.5em;
 	}
 	.pa_italic label.horse2 {
-		background: url(../images/img-sp.png) no-repeat -8px -104px;
+		background: url(assets/images/img-sp.png) no-repeat -8px -104px;
 	}
 	.banner-bottom,.latest-posts-bottom, .single, .services, .events, .gallery, .latest-posts, .about, .about-bottom, .testimonials, .about-bottom1, .typo, .contact {
 		padding: 3em 0;
@@ -2576,7 +2576,7 @@ nav.paging1{
 	.latest-posts-bottom-grid-left:after {
 		right: 68%;
 		bottom: -40%;
-		background: url(../images/1.png) no-repeat 0px 0px;
+		background: url(assets/images/1.png) no-repeat 0px 0px;
 		width: 230px;
 		height: 195px;
 		background-size: 100%;
@@ -2772,7 +2772,7 @@ nav.paging1{
 		font-size: 1.4em;
 	}
 	.pa_italic label.horse3 {
-		background: url(../images/img-sp.png) no-repeat -1px -95px;
+		background: url(assets/images/img-sp.png) no-repeat -1px -95px;
 		background-size: 65%;
 	}
 	.pa_italic i, .collapsed span {
@@ -2891,7 +2891,7 @@ nav.paging1{
 		margin:0.8em 0 0 2em;
 	}
 	.search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat -1px 4px;
+		background: url(assets/images/img-sp.png) no-repeat -1px 4px;
 	}
 	.menu__item:nth-child(1){
 		margin:4em 0 0 !important;
@@ -2945,18 +2945,18 @@ nav.paging1{
 		padding-left: 2.5em;
 	}
 	.pa_italic label.horse1 {
-		background: url(../images/img-sp.png) no-repeat -3px -27px;
+		background: url(assets/images/img-sp.png) no-repeat -3px -27px;
 		background-size: 60%;
 	}
 	.pa_italic i, .collapsed span {
 		left: 27.5em;
 	}
 	.pa_italic label.horse2 {
-		background: url(../images/img-sp.png) no-repeat 0px -62px;
+		background: url(assets/images/img-sp.png) no-repeat 0px -62px;
 		background-size: 90%;
 	}
 	.pa_italic label.horse3 {
-		background: url(../images/img-sp.png) no-repeat -1px -87px;
+		background: url(assets/images/img-sp.png) no-repeat -1px -87px;
 		background-size: 60%;
 	}
 	.services-grid {
@@ -3150,7 +3150,7 @@ nav.paging1{
 		margin: 1em 0 0;
 	}
 	.search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 14px 4px;
+		background: url(assets/images/img-sp.png) no-repeat 14px 4px;
 	}
 	.flexslider-info {
 		width: 100%;
@@ -3180,14 +3180,14 @@ nav.paging1{
 		font-size: 1.2em;
 	}
 	.pa_italic label.horse2 {
-		background: url(../images/img-sp.png) no-repeat 0px -58px;
+		background: url(assets/images/img-sp.png) no-repeat 0px -58px;
 		background-size: 90%;
 	}
 	.pa_italic i, .collapsed span {
 		left: 29.5em;
 	}
 	.pa_italic label.horse1 {
-		background: url(../images/img-sp.png) no-repeat -3px -18px;
+		background: url(assets/images/img-sp.png) no-repeat -3px -18px;
 		background-size: 50%;
 	}
 	.services-grid {
@@ -3347,7 +3347,7 @@ nav.paging1{
 		padding: 8px 10px;
 	}
 	.search input[type="submit"] {
-		background: url(../images/img-sp.png) no-repeat 5px 2px;
+		background: url(assets/images/img-sp.png) no-repeat 5px 2px;
 		padding: 8px 0 4px;
 	}
 	.banner-info h4 {
@@ -3457,18 +3457,18 @@ nav.paging1{
 		font-size: 1.2em;
 	}
 	.pa_italic label.horse1 {
-		background: url(../images/img-sp.png) no-repeat -1px -20px;
+		background: url(assets/images/img-sp.png) no-repeat -1px -20px;
 		background-size: 60%;
 	}
 	.panel-body {
 		padding: 10px;
 	}
 	.pa_italic label.horse2 {
-		background: url(../images/img-sp.png) no-repeat -4px -55px;
+		background: url(assets/images/img-sp.png) no-repeat -4px -55px;
 		background-size: 100%;
 	}
 	.pa_italic label.horse3 {
-		background: url(../images/img-sp.png) no-repeat -1px -66px;
+		background: url(assets/images/img-sp.png) no-repeat -1px -66px;
 		background-size: 60%;
 	}
 	.pa_italic i, .collapsed span {
