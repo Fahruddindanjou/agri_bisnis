@@ -29,23 +29,23 @@
 
 .active-nav > a{
     border: 1px solid;
-    border-color: #ffc107;
-    color: #ffc107 !important;
+    border-color: #c59c45;
+    color: #c59c45 !important;
     border-radius: 5px;
 }
 
 .hvr-nav > a:hover{
     border: 1px solid;
-    border-color: #ffc107;
-    color: #ffc107 !important;
+    border-color: #c59c45;
+    color: #c59c45 !important;
     border-radius: 5px;
     margin: 5px;
 }
 
 
 .navbar-default .navbar-nav > li > a:hover{
-    color:#ffc107;
-    border-color: #ffc107;
+    color:#c59c45;
+    border-color: #c59c45;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -70,9 +70,9 @@
 }
 .chat-btn{
     background:none; 
-    border:1px solid #ffc107; 
-    color: #ffc107;
-    margin-top: 50px;
+    border:1px solid #c59c45; 
+    color: #c59c45;
+    margin-top: 20px;
     border-radius: 5px;
     font-weight: bold;
     font-size: large;
@@ -96,8 +96,8 @@
 }
 
 .hvr-sweep-to-top:before{
-    background: #ffc107;
-    border: 1px solid #ffc107 !important;
+    background: #c59c45;
+    border: 1px solid #c59c45 !important;
 }
 .banner-bottom{
     padding-top: 10px ;
@@ -319,7 +319,7 @@ body a, button, .btn {
 .bg-channel{
     margin: 2em 0;
     background: #f5f5f5;
-    padding: 2em 0em;
+    padding-top: 5px;
 }
 
 .bg-abu{
@@ -350,4 +350,28 @@ body a, button, .btn {
     font-weight: bold;
     margin-left: 25px;
     margin-top: 0;
+}
+
+/* nav */
+.in{
+    background: #171616;
+    display: block;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 5px 39px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }

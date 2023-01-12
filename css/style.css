@@ -710,7 +710,7 @@ ul.wmuSliderPagination {
 }
 .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active,.services-grid:hover  .hvr-sweep-to-top{
 	color: white;
-	border:1px solid #ffffff;
+	border:1px solid #c59c45;
 	border-radius: 5px;
 }
 .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before,.services-grid:hover .hvr-sweep-to-top:before{
@@ -2543,7 +2543,7 @@ nav.paging1{
 		margin: 2em 0 0;
 	}
 	.pa_italic i, .collapsed span {
-		left: 41.5em;
+		left: 37.5em;
 	}
 	.pa_italic label.horse2 {
 		background: url(../images/img-sp.png) no-repeat -8px -104px;
@@ -2775,7 +2775,7 @@ nav.paging1{
 		background-size: 65%;
 	}
 	.pa_italic i, .collapsed span {
-		left: 38.5em;
+		left: 35.5em;
 	}
 	.item, .item-hover, .item-hover .mask, .item-img, .item-info {
 		width: 267px;
@@ -2870,7 +2870,7 @@ nav.paging1{
 }
 @media (max-width:568px){
 	.pa_italic i, .collapsed span {
-		left: 33.5em;
+		left: 29.5em;
 	}
 	.item, .item-hover, .item-hover .mask, .item-img, .item-info {
 		width: 231px;
@@ -2948,7 +2948,7 @@ nav.paging1{
 		background-size: 60%;
 	}
 	.pa_italic i, .collapsed span {
-		left: 30em;
+		left: 27.5em;
 	}
 	.pa_italic label.horse2 {
 		background: url(../images/img-sp.png) no-repeat 0px -62px;
