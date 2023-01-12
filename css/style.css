@@ -352,6 +352,7 @@ li.menu__item.menu__item--current a.menu__link {
 .menu--horatio .menu__item:hover a::after {
 	content: '';
 	border-color:#C59C45;
+	color: #c59c45;
 }
 
 .menu--horatio .menu__item:not(.menu__item--current):hover::before,
