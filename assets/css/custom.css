@@ -185,6 +185,9 @@
 h1, h2, h3, h4, h5, h6,p{
     font-family: 'Gothic A1', sans-serif;
 }
+a{
+    font-family: 'Gothic A1', sans-serif;
+}
 
 .categories{
     margin-top: 10px;
@@ -442,6 +445,10 @@ body a, button, .btn {
     }
     .font-normal{
         font-size: medium;
+    }
+    .fs-2 {
+        font-weight: normal;
+        font-size: 40px;
     }
 }
 
