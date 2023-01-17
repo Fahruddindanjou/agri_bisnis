@@ -39,7 +39,7 @@ body a:hover{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:800px;
+	min-height:660px;
 	overflow: hidden;
     position: relative;
 }
@@ -430,6 +430,7 @@ li.menu__item.menu__item--current a.menu__link {
     width: 85%;
     margin: 12em auto 0;
     text-align: center;
+	
 }
 .banner-info h4{
 	font-size: 1.5em;
@@ -2313,7 +2314,7 @@ nav.paging1{
 /*-----start-responsive-design------*/
 @media (max-width:1440px){
 	.banner {
-		min-height: 700px;
+		min-height: 660px;
 	}
 }
 @media (max-width:1280px){
@@ -2894,7 +2895,7 @@ nav.paging1{
 		background: url(assets/images/img-sp.png) no-repeat -1px 4px;
 	}
 	.menu__item:nth-child(1){
-		margin:4em 0 0 !important;
+		margin:1px 0 0 !important;
 	}
 	.menu--horatio .menu__item {
 		margin: .5em 0 0;
@@ -2920,6 +2921,7 @@ nav.paging1{
 	}
 	.flexslider-info {
 		margin: 6em auto 0;
+		justify-content: center;
 	}
 	.banner {
 		background-position: -60px 0px;
@@ -2942,7 +2944,7 @@ nav.paging1{
 	}
 	.pa_italic label {
 		font-size: .8em;
-		padding-left: 2.5em;
+		padding-left: -6.5em;
 	}
 	.pa_italic label.horse1 {
 		background: url(assets/images/img-sp.png) no-repeat -3px -27px;

@@ -130,9 +130,8 @@
 }
 .banner-bottom-grid-left-pos1{
     padding-top: 0;
-    padding: 10px;
     text-align: center;
-    padding-bottom: 380px;
+    align-content: center;
     border: 0;
 }
 .banner-bottom-grid-left-pos{
@@ -386,4 +385,85 @@ body a, button, .btn {
 
 .horse3{
     background:url(assets/images/img-sp.png) no-repeat -1px -153px;
+}
+
+.text-size{
+    font-weight: 700; 
+    font-size: 25pt; 
+    color: white;
+}
+
+
+@media screen and (max-width: 480px) {
+    .chat-btn{
+        background:none; 
+        border:1px solid #c59c45; 
+        color: #c59c45;
+        margin-top: 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: medium;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .chat-btn1{
+        background:none; 
+        border:1px solid #ffffff; 
+        color: #ffffff;
+        margin-top: 10px;
+        border-radius: 0;
+    }
+    .search-input1{
+        margin-top: 0px;
+        margin-left: 10px; 
+        padding-top: 0px;
+        margin-bottom: 5px;
+    }
+    .banner-main{
+        margin-top: 0px;
+    }
+    .text-size{
+        font-weight: 500; 
+        font-size: 20pt; 
+        color: white;
+    }
+    .banner-main{
+        margin-top: -36px;
+    }
+    .flex-control-paging li a{
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+    }
+    .flex-control-nav{
+        bottom: -30px;
+        right: 34%;
+    }
+    .font-normal{
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .flex-control-paging li a{
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+    }
+    /* .flex-control-nav{
+        bottom: -30px;
+        right: 41%;
+    } */
+}
+
+
+.row1{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
 }
