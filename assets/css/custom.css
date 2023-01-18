@@ -396,6 +396,64 @@ body a, button, .btn {
     color: white;
 }
 
+.row1{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.py-lg-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.pb-sm-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pt-4 {
+    padding-top: 1.5rem !important;
+}
+
+.breadcrumb {
+    padding: 0px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+    color: white;
+}
+
+.breadcrumb a {
+    color: white;
+    font-weight: bold;
+}
+.active-card{
+    background-color: #198754;
+    color: white;
+}
+.bg-hover:hover{
+    background-color: #198754;
+    color:white;
+    cursor:pointer;
+}
+
+.icon-style {
+    font-size: 40px;
+    margin-bottom: 15px;
+} 
+
+.icon-style:hover {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 15px;
+} 
+
+
 
 @media screen and (max-width: 480px) {
     .chat-btn{
@@ -450,6 +508,13 @@ body a, button, .btn {
         font-weight: normal;
         font-size: 40px;
     }
+    .breadcrumb {
+        padding: 0px 100px 0px 0px;
+        margin-bottom: 0px;
+        list-style: none;
+        background-color: transparent;
+        color: white;
+    }
 }
 
 @media screen and (max-width: 991px){
@@ -465,12 +530,4 @@ body a, button, .btn {
 }
 
 
-.row1{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) / -2);
-    margin-left: calc(var(--bs-gutter-x) / -2);
-}
+

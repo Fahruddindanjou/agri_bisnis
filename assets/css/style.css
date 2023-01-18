@@ -1369,7 +1369,7 @@ ul.social li{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:700px;
+	min-height:351px;
 }
 .about-bottom-grids{
 	margin:3em 0 0;
@@ -1383,8 +1383,8 @@ ul.social li{
 .about-bottom-grid1{
 	padding: 1.5em;
     text-align: center;
-    background: #A5A5A5;
-    border: 4px double #fff;
+    background: transparent;
+	color:white;
 }
 .about-bottom-grid1 img{
 	padding: .5em;
