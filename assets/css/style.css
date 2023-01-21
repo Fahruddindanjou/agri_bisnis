@@ -7,13 +7,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	background:	#fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Segoe UI", Arial, sans-serif;
 }
 p{
 	margin:0;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Nixie One', cursive;
+	font-family: "Segoe UI", Arial, sans-serif;
 	font-weight:700;
 	margin:0;
 }
@@ -1043,7 +1043,7 @@ ul.social li{
 	margin:0 .5em;
 	font-size:1em;
 	color:#999;
-	font-family: 'Nixie One', cursive;
+	font-family: "Segoe UI", Arial, sans-serif;
 }
 .social a {
 	position: relative;
