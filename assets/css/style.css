@@ -50,7 +50,7 @@ body a:hover{
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:500px;
+	max-height: 354px;	
 }
 .logo{
 	float:left;
