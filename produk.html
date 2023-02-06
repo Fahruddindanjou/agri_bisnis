@@ -57,7 +57,7 @@
     <!-- end navbar -->
 
     <!-- banner -->
-	<div class="banner1 mb-1" style="background-image:url(assets/images/banner.jpg);">
+	<div class="banner1 mb-1" style="background-image:url('https://images.unsplash.com/photo-1560693225-b8507d6f3aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');">
 		<div class="py-lg-5">
             <div class="container pb-sm-4 pt-4">
                 <div class="banner-main" style="padding-top: 15%; margin-top: 20px;">
@@ -93,9 +93,9 @@
             <div class="col-md-8">
                 <div class="card mb-1 border-0 shadow-sm">
                     <div class="card-body">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex;">
                             <ul class="nav nav-pills">
-                                <li role="presentation"><a href="#" class="text-green"><i class="fa fa-cow"></i> Ternak</a></li>
+                                <li role="presentation" style="margin:0px;"><a href="#" class="text-green"><i class="fa fa-cow"></i> Ternak</a></li>
                                 <li role="presentation"><a href="#" class="text-green"><i class="fa fa-leaf"></i> Sayuran</a></li>
                                 <li role="presentation" class="active"><a href="#" class="text-green"><i class="fa fa-lemon-o"></i> Buah</a></li>
                               </ul>
@@ -104,10 +104,10 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-1 border-0 shadow-sm">
+                <div class="card mb-1 border-0 shadow-sm" style="padding-bottom: 3px;">
                     <div class="card-body">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <h4 class="fs-normal">Produk</h4>
+                        <div style="display: flex; justify-content: space-between; justify-items: center;">
+                            <h4 class="fs-normal" style="margin-top: 7px;">Produk</h4>
                             <div class="input-group" style="margin-bottom: 5px;">
                                 <div class="input-group-btn">
                                   <button class="form-control dropdown-toggle" placeholder="" style="border-radius: 5px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori <span class="caret"></span></button>
@@ -124,27 +124,72 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card shadow-sm" style="border-radius: 5px;">
-                <div style=" justify-items: center;">
-                    <img src="assets/images/apel.jpg" alt="" class="card-img-top img-fluid w-100 img-rounded"  style="max-height: 50%;">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="col-md-3">
+                    <div class="card shadow-sm" style="border-radius: 5px;">
+                        <div style=" justify-items: center;">
+                            <img src="assets/images/apel.jpg" alt="" class="card-img-top img-fluid w-100 img-rounded"  style="max-height: 50%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mb-1" >Apel</h4>
+                            <h5 class="text-green fw-bold mb-1"> Rp.15.000 / kg</h5>
+                            <button type="button" class="btn btn-primary float-end">Detail <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body text-center">
-                    <h4 class="mb-1" >Apel</h4>
-                    <h5 class="text-green fw-bold mb-1"> Rp.15.000 / kg</h5>
-                    <button type="button" class="btn btn-primary float-end">Detail <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="col-md-3">
+                    <div class="card shadow-sm" style="border-radius: 5px;">
+                        <div style=" justify-items: center;">
+                            <img src="assets/images/apel.jpg" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="mb-1">Pepaya</h4>
+                            <h5 class="text-green fw-bold mb-1"> Rp.15.000 / kg</h5>
+                            <button type="button" class="btn btn-primary float-end">Detail <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card shadow-sm" style="border-radius: 5px;">
-                <div style=" justify-items: center;">
-                    <img src="assets/images/apel.jpg" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
-                </div>
-                <div class="card-body text-center">
-                    <h4 class="mb-1">Pepaya</h4>
-                    <h5 class="text-green fw-bold mb-1"> Rp.15.000 / kg</h5>
-                    <button type="button" class="btn btn-primary float-end">Detail <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0" style="padding:5px 5px 5px 5px;">
+                    <h4>Best Seller</h4>
+                    <div class="media" style="border-bottom: 1px solid #dbdbdb;">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object shadow-sm" src="assets/images/apel.jpg" alt="..." style="max-width:100px; max-height: 100px;">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Apple</h4>
+                          <p>Seller : Pertanian Makmur</p>
+                          <div class="text-warning" style="display:flex;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>  
+                          </div>
+                        </div>
+                    </div>
+                    <div class="media" style="border-bottom: 1px solid #dbdbdb;">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object shadow-sm" src="assets/images/pepaya.jpg" style="max-width:100px; max-height: 100px;">
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Pepaya</h4>
+                          <p>Seller : Pertanian Makmur</p>
+                          <div class="text-warning" style="display:flex;">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>  
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
