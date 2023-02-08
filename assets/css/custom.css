@@ -559,6 +559,13 @@ button,
   -moz-transform: scale(1.1);
 }
 
+.leaflet-container {
+  height: 400px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .et_pb_promo_description {
   padding-bottom: 20px;
   position: relative;

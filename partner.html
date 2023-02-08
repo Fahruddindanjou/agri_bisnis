@@ -18,6 +18,10 @@
 
 <link href="assets/css/animate.min.css" rel="stylesheet"> 
 <script src="assets/js/wow.min.js"></script>
+
+<!-- maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 <style>
     @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
     </style>
@@ -121,6 +125,9 @@
                 </div>
             </div>
         </div>
+        <!-- maps -->
+        <h3 class="text-center mb-1">Maps Partner Agri Bisnis</h3>
+        <div id="map" class="mb-2" style="width: 100%; height: 400px;"></div>
     </div>
     
     <!-- footer -->
@@ -295,6 +302,35 @@ $(window).load(function() {
         }
     });
 </script>
+<!-- maps -->
+<script>
+
+	const map = L.map('map').setView([-6.583864749624509, 110.66182506477746], 13);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	const marker = L.marker([-6.583864749624509, 110.66182506477746]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+
+	const popup = L.popup()
+		.setLatLng([-6.583864749624509, 110.66182506477746])
+		.setContent('I am a standalone popup.')
+		.openOn(map);
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent(`You clicked the map at ${e.latlng.toString()}`)
+			.openOn(map);
+	}
+
+	map.on('click', onMapClick);
+
+</script>
+
 <!-- kit fontawesome -->
 <script src="https://kit.fontawesome.com/7ac3fca741.js" crossorigin="anonymous"></script>
 </body>
