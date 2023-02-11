@@ -570,6 +570,46 @@ button,
   padding-bottom: 20px;
   position: relative;
 }
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 656px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* .slider-bg {
+  height: 100%;
+  width: 100%;
+  max-height: 100vh;
+  opacity: 0.8;
+  object-fit: cover;
+} */
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.carousel-caption {
+  bottom: -127px;
+}
 @media (min-width: 992px) {
   #myCarousel {
     padding-right: 33.3333%;
@@ -586,6 +626,25 @@ button,
 }
 
 @media screen and (max-width: 480px) {
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    line-height: 1;
+    object-fit: cover;
+    height: 60vh;
+  }
+
+  .item, .item-hover, .item-hover .mask, .item-img, .item-info {
+    width: auto;
+    height: 233px;
+}
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 434px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
   .chat-btn {
     background: none;
     border: 1px solid #c59c45;
@@ -658,3 +717,85 @@ button,
         right: 41%;
     } */
 }
+
+@media screen and (max-width: 768px){
+  .banner {
+    min-height: 420px;
+}
+
+  .carousel-indicators {
+      bottom: 10px;
+  }
+
+  .item, .item-hover, .item-hover .mask, .item-img, .item-info {
+    width: auto;
+    height: 233px;
+  }
+  
+  .carousel-caption {
+    bottom: -106px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 434px;
+  overflow: hidden;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 360px){
+  .banner {
+    max-height: 420px;
+}
+
+  .carousel-indicators {
+      bottom: -15px;
+  }
+
+  .item, .item-hover, .item-hover .mask, .item-img, .item-info {
+    width: auto;
+    height: 233px;
+  }
+  
+  .carousel-caption {
+    bottom: -146px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 434px;
+  overflow: hidden;
+  object-fit: cover;
+}
+}
+
+@media screen and (max-width: 650px){
+  .banner {
+    min-height: 420px;
+}
+
+  .carousel-indicators {
+      bottom: -13px;
+  }
+
+  .item, .item-hover, .item-hover .mask, .item-img, .item-info {
+    width: auto;
+    height: 233px;
+  }
+  
+  .carousel-caption {
+    bottom: -104px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  overflow: hidden;
+  object-fit: cover;
+}
+}
+
