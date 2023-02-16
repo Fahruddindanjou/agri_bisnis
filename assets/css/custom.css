@@ -799,3 +799,49 @@ button,
 }
 }
 
+.navbar-default1{
+  background-color: rgba(228, 228, 228, 0.705);
+  border: 0;
+}
+
+.comments h3, .leave-coment-form h3 {
+  font-size: 1.5em;
+  color: #90B82D;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  padding-bottom: 1em;
+}
+
+.leave-coment-form h3:after {
+  background: none;
+  width: 30%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+}
+
+.comments h3:after{
+  background: none;
+}
+
+.categories h3:after, .posts h3:after, .tags1 h3:after, .comments h3:after, .leave-coment-form h3:after {
+  background: none;
+  width: 30%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+}
+
+.categories h3, .posts h3, .tags1 h3, .comments h3, .leave-coment-form h3 {
+  font-size: 1.5em;
+  color: #90B82D;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  padding-bottom: 1em;
+}
