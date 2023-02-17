@@ -94,11 +94,11 @@
                 <div class="card mb-1 border-0 shadow-sm">
                     <div class="card-body">
                         <div style="display: flex;">
-                            <ul class="nav nav-pills">
-                                <li role="presentation" style="margin:0px;"><a href="#" class="text-green"><i class="fa fa-cow"></i> Ternak</a></li>
-                                <li role="presentation"><a href="#" class="text-green"><i class="fa fa-leaf"></i> Sayuran</a></li>
-                                <li role="presentation" class="active"><a href="#" class="text-green"><i class="fa fa-lemon-o"></i> Buah</a></li>
-                              </ul>
+                            <ul class="nav nav-pills" role="tablist">
+                                <li role="presentation" class="active" style="margin:0px;"><a href="#ternak" class="text-green" role="tab" data-toggle="tab"><i class="fa fa-cow"></i> Ternak</a></li>
+                                <li role="presentation"><a href="#sayuran" class="text-green" role="tab" data-toggle="tab"><i class="fa fa-leaf"></i> Sayuran</a></li>
+                                <li role="presentation"><a href="#buah" class="text-green" role="tab" data-toggle="tab"><i class="fa fa-lemon-o"></i> Buah</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -124,52 +124,91 @@
                 </div>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-md-8">
-                <a href="detail_produk.html" class="text-dark">
-                <div class="col-md-4 mb-1">
-                        <div class="card shadow-sm" style="border-radius: 5px;">
-                            <div style=" justify-items: center;">
-                                <img src="assets/images/apel.jpg" class="card-img-top img-rounded" style="max-height: 50%;">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="ternak">
+                        <a href="detail_produk.html" class="text-dark">
+                        <div class="col-md-4 mb-1">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/2.jpg" class="card-img-top img-rounded" style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Kambing</p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.1.115.000 / Ekor</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body text-left">
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;">Apel</p>
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                            </div>
+                        </a>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="sayuran">
+                        <div class="col-md-4 mb-1">
+                            <a href="detail_produk.html" class="text-dark">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/Brokoli.jpg" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Brokoli</p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-1">
+                            <a href="detail_produk.html" class="text-dark">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/selada.jpg" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Selada</p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.10.500 / Ikat</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </a>
-                <div class="col-md-4 mb-1">
-                    <a href="detail_produk.html" class="text-dark">
-                        <div class="card shadow-sm" style="border-radius: 5px;">
-                            <div style=" justify-items: center;">
-                                <img src="assets/images/pisang.png" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
-                            </div>
-                            <div class="card-body text-left">
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pisang Ambon</p>
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                            </div>
+                    <div role="tabpanel" class="tab-pane" id="buah">
+                        <div class="col-md-4 mb-1">
+                            <a href="" class="text-dark">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/pepaya.png" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pepaya</p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-4 mb-1">
-                    <a href="" class="text-dark">
-                        <div class="card shadow-sm" style="border-radius: 5px;">
-                            <div style=" justify-items: center;">
-                                <img src="assets/images/pepaya.png" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
-                            </div>
-                            <div class="card-body text-left">
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pepaya</p>
-                                <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                            </div>
+                        <div class="col-md-4 mb-1">
+                            <a href="detail_produk.html" class="text-dark">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/pisang.png" alt="" class="card-img-top img-rounded" style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pisang Ambon</p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">

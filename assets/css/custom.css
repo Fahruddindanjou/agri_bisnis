@@ -70,7 +70,7 @@
 .chat-btn {
   background: none;
   border: 1px solid #c59c45;
-  color: #c59c45;
+  color: #ffffff;
   margin-top: 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -94,7 +94,10 @@ p {
   background: #fff;
   width: 10%;
 }
-
+.active-btn{
+  background: #c59c45 !important;
+  border: 1px solid #c59c45 !important;
+}
 .hvr-sweep-to-top:before {
   background: #c59c45;
   border: 1px solid #c59c45 !important;
