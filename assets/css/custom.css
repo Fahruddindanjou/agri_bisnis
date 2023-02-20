@@ -102,6 +102,7 @@ p {
   background: #c59c45;
   border: 1px solid #c59c45 !important;
 }
+
 .banner-bottom {
   padding-top: 10px;
 }
@@ -612,6 +613,10 @@ button,
 
 .carousel-caption {
   bottom: -127px;
+}
+
+.shadow-lg {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.301) !important;
 }
 @media (min-width: 992px) {
   #myCarousel {
