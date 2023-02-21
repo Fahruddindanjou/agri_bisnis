@@ -153,6 +153,11 @@ p {
   border-radius: 0;
 }
 
+.chat-btn1:hover{
+  background-color: #90b82d !important;
+  color: white !important;
+}
+
 .services {
   min-height: 300px;
 }
@@ -616,7 +621,20 @@ button,
 }
 
 .shadow-lg {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.301) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.199) !important;
+}
+
+.nav-pills > li.active1 > a, .nav-pills > li.active1 > a:hover, .nav-pills > li.active1 > a:focus {
+  background-color: #c59c45;
+  color: white !important;
+}
+
+.leave-coment-form form {
+  margin: 0em;
+}
+
+.comments-grids {
+  margin: 0em 0 0;
 }
 @media (min-width: 992px) {
   #myCarousel {
