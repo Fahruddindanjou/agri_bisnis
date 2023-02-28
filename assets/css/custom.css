@@ -27,6 +27,10 @@
   margin: 0px;
 }
 
+.active_nav{
+  color: #c59c45 !important;
+}
+
 .active-nav > a {
   border: 1px solid;
   border-color: #c59c45;

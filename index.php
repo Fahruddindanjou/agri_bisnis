@@ -1,62 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Agri Bisnis</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- //for-mobile-apps -->
-<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--FlexSlider-->
-<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />	
-<!--End-slider-script-->
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-<!-- custom css -->
-<link rel="stylesheet" href="assets/css/custom.css">
+<?php
 
-<link href="assets/css/animate.min.css" rel="stylesheet"> 
-<script src="assets/js/wow.min.js"></script>
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-</style>
-</head>
-	
-<body>
-<!-- navbar -->
-<nav class="navbar navbar-default navbar-fixed-top nav menu menu--horatio" >
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" style="margin-top:15px; " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="" href="#" style="width: 200px; display: inline-flex; align-items: center; justify-items: center;">
-				<img href="#" alt="" src="https://perumdajepara.co.id/public/assets/front/img/logo%20PERUMDA%20JEPARA.png"  class="img-brand">
-			</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right text-center" style="align-items: center;">
-				<li class="menu__item menu__item--current"><a href="index.html" style="color: #c59c45;">Home</a></li>
-				<li class="menu__item"><a href="tentang_kami.html">Tentang Kami</a></li>
-				<li class="menu__item"><a href="produk.html">Produk</a></li>
-				<li class="menu__item"><a href="informasi.html">Informasi</a></li>
-				<li class="menu__item"><a href="partner.html">Partner</a></li>
-				<li class="menu__item"><a href="contact.html">Kontak</a></li>
-				<form action="" class="search-input1" style="margin-left: 10px; padding-top: 10px;">
-					<input type="text" class="form-control input_search" placeholder="Cari Berita ...">
-					<button class="btn btn-sm input-icon"><i class="fa fa-magnifying-glass" style="color: gold;"></i> </button>
-				</form>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
-</nav>
-<!-- end navbar -->
+    $page = "index";
+
+?>
+
+<?php
+
+    include 'layouts/header.php'
+
+?>
+
+
 <!-- banner -->
 <div class="banner">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -244,12 +198,12 @@
 													<span class="float-end"><i class="fa fa-ellipsis-vertical"></i></span>
 												</p>
 												<h4 class="" style="font-weight: 700;">
-													<a href="detail_berita.html" class="text-decoration-none hover-costume" style="font-weight: bold; padding-top: 10px;">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin ...
+													<a href="detail_berita.php" class="text-decoration-none hover-costume" style="font-weight: bold; padding-top: 10px;">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin ...
 													</a>
 												</h4>
 												<p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ...
 												</p>
-												<a href="detail_berita.html" class="hover-costume"><small><b>Lanjutkan membaca »</b></small></a>
+												<a href="detail_berita.php" class="hover-costume"><small><b>Lanjutkan membaca »</b></small></a>
 											</div>
 										</div>
 									</div>
@@ -500,7 +454,7 @@
 					</div>
 					<div class="latest-posts-grid-right">
 						<a href="#"><img src="assets/images/6.jpg" alt=" " class="img-responsive"></a>
-						<h4><a href="detail_berita.html">aut perfer doloribus</a></h4>
+						<h4><a href="detail_berita.php">aut perfer doloribus</a></h4>
 						<ul>	
 							<li>April 15, 2016 <i>|</i></li>
 							<li><a href="#">5 Comments</a> <i>|</i></li>
@@ -509,7 +463,7 @@
 						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
 							adipisci velit, sed quia.</p>
 						<div class="more">
-							<a href="detail_berita.html" class="hvr-sweep-to-top">Read More...</a>
+							<a href="detail_berita.php" class="hvr-sweep-to-top">Read More...</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -528,7 +482,7 @@
 					</div>
 					<div class="latest-posts-grid-right">
 						<a href="#"><img src="assets/images/7.jpg" alt=" " class="img-responsive"></a>
-						<h4><a href="detail_berita.html">illum qui dolorem eum</a></h4>
+						<h4><a href="detail_berita.php">illum qui dolorem eum</a></h4>
 						<ul>	
 							<li>May 1, 2016 <i>|</i></li>
 							<li><a href="#">8 Comments</a> <i>|</i></li>
@@ -537,7 +491,7 @@
 						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
 							adipisci velit, sed quia.</p>
 						<div class="more">
-							<a href="detail_berita.html" class="hvr-sweep-to-top">Read More...</a>
+							<a href="detail_berita.php" class="hvr-sweep-to-top">Read More...</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -556,7 +510,7 @@
 					</div>
 					<div class="latest-posts-grid-right">
 						<a href="#"><img src="assets/images/8.jpg" alt=" " class="img-responsive"></a>
-						<h4><a href="detail_berita.html">fugiat quo voluptas</a></h4>
+						<h4><a href="detail_berita.php">fugiat quo voluptas</a></h4>
 						<ul>	
 							<li>May 15, 2016 <i>|</i></li>
 							<li><a href="#">5 Comments</a> <i>|</i></li>
@@ -565,7 +519,7 @@
 						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, 
 							adipisci velit, sed quia.</p>
 						<div class="more mb-1">
-							<a href="detail_berita.html" class="hvr-sweep-to-top">Read More...</a>
+							<a href="detail_berita.php" class="hvr-sweep-to-top">Read More...</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -627,106 +581,11 @@
 		</ul>
 	</nav>
 <!-- end pagination -->
-<!-- footer -->
-<div class="footer">
-	<div class="container">
-		<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".5s" >
-			<h3 style="margin: 0 0 1em;">About Us</h3>
-			<p style="margin: 0em !important;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-				deserunt mollit anim id est laborum.</p>
-		</div>
-		<div class="col-md-5 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
-			<div class="col-sm-6 column footer-grid">
-				<h3 style="margin: 0 0 1em;">Navigasi</h3>
-				<ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-					<li>Tentang Kami</li>
-					<li>Produk</li>
-					<li>Berita & Informasi</li>
-				</ul>
-			</div>
-			<div class="col-sm-5 column footer-grid">
-				<h3 style="margin: 0 0 1em;">Layanan</h3>
-				<ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-					<li>Tentang Kami</li>
-					<li>Produk</li>
-					<li>Berita & Informasi</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
-			<h3 style="margin: 0 0 1em;">Contact Info</h3>
-			<ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-				<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
-				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
-			</ul>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-</div>
-<div class="footer-copy">
-	<div class="container">
-		<p class="animated wow slideInLeft" data-wow-delay=".5s">© 2023 Agri Bisnis PERUMDA JEPARA <a href="#"></a></p>
-	</div>
-</div>
-<!-- //footer -->
 
-<!-- JS -->
-<!-- js -->
-<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- for bootstrap working -->
-	<script src="assets/js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="assets/js/move-top.js"></script>
-<script type="text/javascript" src="assets/js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-<!-- slider -->
-<script defer src="assets/js/jquery.flexslider.js"></script>
-<script type="text/javascript">
-		$(window).load(function(){
-		  $('.flexslider').flexslider({
-			animation: "slide",
-			start: function(slider){
-			  $('body').removeClass('loading');
-			}
-		  });
-		});
-</script>
-<!-- kit fontawesome -->
-<script src="https://kit.fontawesome.com/7ac3fca741.js" crossorigin="anonymous"></script>
-<!-- end slider -->
 
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-	function hideURLbar(){ window.scrollTo(0,1); } </script>
+<?php
 
-<script>
-	var nav = document.querySelector('nav');
+    include 'layouts/footer.php'
 
-	window.addEventListener('scroll', function(){
-		if(window.pageYOffset > 100){
-			nav.classList.add('bg-navbar', 'shadow');
-		}else{
-			nav.classList.remove('bg-navbar', 'shadow');
-		}
-	});
-  </script>
-</body>
-</html>
+?>
+

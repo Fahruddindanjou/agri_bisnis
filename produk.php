@@ -1,60 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Agri Bisnis</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- //for-mobile-apps -->
-<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--FlexSlider-->
-<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />	
-<!--End-slider-script-->
-<!-- font -->
+<?php 
 
-<!-- custom css -->
-<link rel="stylesheet" href="assets/css/custom.css">
+    $page = 'produk';
 
-<link href="assets/css/animate.min.css" rel="stylesheet"> 
-<script src="assets/js/wow.min.js"></script>
-<style>
-    @import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
-    </style>
-</head>
+?>
 
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top nav menu menu--horatio" >
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" style="margin-top:15px; " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <a class="" href="#" style="width: 200px; display: inline-flex; align-items: center; justify-items: center;">
-                    <img href="#" alt="" src="https://perumdajepara.co.id/public/assets/front/img/logo%20PERUMDA%20JEPARA.png"  class="img-brand">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right text-center" style="align-items: center;">
-                    <li class="menu__item"><a href="index.html">Home</a></li>
-                    <li class="menu__item"><a href="tentang_kami.html">Tentang Kami</a></li>
-                    <li class="menu__item menu__item--current"><a href="produk.html" style="color: #c59c45;">Produk</a></li>
-                    <li class="menu__item"><a href="informasi.html">Informasi</a></li>
-                    <li class="menu__item"><a href="partner.html">Partner</a></li>
-                    <li class="menu__item"><a href="contact.html">Kontak</a></li>
-                    <form action="" class="search-input1" style="margin-left: 10px; padding-top: 10px;">
-                        <input type="text" class="form-control input_search" placeholder="Cari Berita ...">
-                        <button class="btn btn-sm input-icon"><img src="assets/images/icon/search.svg" alt="" class="img-responsive"></button>
-                    </form>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <!-- end navbar -->
+<?php 
+
+    include 'layouts/header.php'
+
+?>
+
 
     <!-- banner -->
 	<div class="banner1 mb-1" style="background-image:url('https://images.unsplash.com/photo-1463123081488-789f998ac9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); max-width: 100%; ">
@@ -64,7 +19,7 @@
                     <h3 class="fw-bold" style="color: white;">Produk</h3>
                     <ul class="breadcrumb" style="padding-top: 5px;">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
                             Produk
@@ -129,7 +84,7 @@
             <div class="col-md-8">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="ternak">
-                        <a href="detail_produk.html" class="text-dark">
+                        <a href="detail_produk.php" class="text-dark">
                         <div class="col-md-4 mb-1">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
@@ -147,7 +102,7 @@
                     </div>
                     <div role="tabpanel" class="tab-pane" id="sayuran">
                         <div class="col-md-4 mb-1">
-                            <a href="detail_produk.html" class="text-dark">
+                            <a href="detail_produk.php" class="text-dark">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
                                         <img src="assets/images/Brokoli.jpg" alt="" class="card-img-top " style="max-height: 50%;">
@@ -162,7 +117,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 mb-1">
-                            <a href="detail_produk.html" class="text-dark">
+                            <a href="detail_produk.php" class="text-dark">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
                                         <img src="assets/images/selada.jpg" alt="" class="card-img-top " style="max-height: 50%;">
@@ -194,7 +149,7 @@
                             </a>
                         </div>
                         <div class="col-md-4 mb-1">
-                            <a href="detail_produk.html" class="text-dark">
+                            <a href="detail_produk.php" class="text-dark">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
                                         <img src="assets/images/pisang.png" alt="" class="card-img-top " style="max-height: 50%;">
@@ -254,107 +209,10 @@
             </div>
         </div>
     </div>
-    
-<!-- footer -->
-<div class="footer">
-    <div class="container">
-        <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".5s" >
-            <h3 style="margin: 0 0 1em;">About Us</h3>
-            <p style="margin: 0em !important;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="col-md-5 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
-            <div class="col-sm-6 column footer-grid">
-                <h3 style="margin: 0 0 1em;">Navigasi</h3>
-                <ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-                    <li>Tentang Kami</li>
-                    <li>Produk</li>
-                    <li>Berita & Informasi</li>
-                </ul>
-            </div>
-            <div class="col-sm-5 column footer-grid">
-                <h3 style="margin: 0 0 1em;">Layanan</h3>
-                <ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-                    <li>Tentang Kami</li>
-                    <li>Produk</li>
-                    <li>Berita & Informasi</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
-            <h3 style="margin: 0 0 1em;">Contact Info</h3>
-            <ul class="footer-address" style="padding: 0em; border-bottom: none; border-top: none; ">
-                <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
-                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<div class="footer-copy">
-    <div class="container">
-        <p class="animated wow slideInLeft" data-wow-delay=".5s">© 2023 Agri Bisnis PERUMDA JEPARA <a href="#"></a></p>
-    </div>
-</div>
-<!-- //footer -->
 
-<!-- JS -->
-<!-- js -->
-<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- for bootstrap working -->
-    <script src="assets/js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $().UItoTop({ easingType: 'easeOutQuart' });
-            });
-    </script>
-<!-- //here ends scrolling icon -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="assets/js/move-top.js"></script>
-<script type="text/javascript" src="assets/js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){		
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-    });
-</script>
-<!-- start-smoth-scrolling -->
-<!-- slider -->
-<script defer src="assets/js/jquery.flexslider.js"></script>
-<script type="text/javascript">
-        $(window).load(function(){
-        $('.flexslider').flexslider({
-            animation: "slide",
-            start: function(slider){
-            $('body').removeClass('loading');
-            }
-        });
-        });
-</script>
-<!-- end slider -->
 
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-    function hideURLbar(){ window.scrollTo(0,1); } </script>
+<?php 
 
-<script>
-    var nav = document.querySelector('nav');
+    include 'layouts/footer.php'
 
-    window.addEventListener('scroll', function(){
-        if(window.pageYOffset > 100){
-            nav.classList.add('bg-navbar', 'shadow');
-        }else{
-            nav.classList.remove('bg-navbar', 'shadow');
-        }
-    });
-</script>
-<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/7ac3fca741.js" crossorigin="anonymous"></script>
-</body>
-</html>
+?>

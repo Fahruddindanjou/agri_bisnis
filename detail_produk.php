@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,12 +42,12 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right text-center" style="align-items: center;">
-                    <li class="menu__item"><a href="index.html" class="text-dark">Home</a></li>
-                    <li class="menu__item"><a href="tentang_kami.html" class="text-dark">Tentang Kami</a></li>
-                    <li class="menu__item menu__item--current"><a href="produk.html" class="text-dark">Produk</a></li>
-                    <li class="menu__item"><a href="informasi.html" class="text-dark">Informasi</a></li>
-                    <li class="menu__item"><a href="partner.html" class="text-dark">Partner</a></li>
-                    <li class="menu__item"><a href="contact.html" class="text-dark">Kontak</a></li>
+                    <li class="menu__item"><a href="index.php" class="text-dark">Home</a></li>
+                    <li class="menu__item"><a href="tentang_kami.php" class="text-dark">Tentang Kami</a></li>
+                    <li class="menu__item"><a href="produk.php" class="text-dark">Produk</a></li>
+                    <li class="menu__item"><a href="informasi.php" class="text-dark">Informasi</a></li>
+                    <li class="menu__item"><a href="partner.php" class="text-dark">Partner</a></li>
+                    <li class="menu__item"><a href="contact.php" class="text-dark">Kontak</a></li>
                     <form action="" class="search-input1" style="margin-left: 10px; padding-top: 10px;">
                         <input type="text" class="form-control input_search" placeholder="Cari Berita ...">
                         <button class="btn btn-sm input-icon"><img src="assets/images/icon/search.svg" alt="" class="img-responsive"></button>
@@ -218,6 +219,7 @@
     </div>
 
     <!-- end other produk -->
+
     
 <!-- footer -->
 <div class="footer">
