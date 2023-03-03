@@ -1,6 +1,6 @@
 <?php
 
-    $page = "tentangkami";
+    $page = "tentang_kami";
 
 ?>
 

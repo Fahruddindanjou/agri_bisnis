@@ -1,3 +1,8 @@
+<?php
+	include "koneksi/connection.php";
+	$koneksi = new database();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,12 +47,17 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right text-center" style="align-items: center;">
-				<li class="menu__item  <?php if($page == "index") echo "menu__item--current" ?>"><a href="index.php" style="<?php if($page == "index") echo "color: #c59c45;" ?>">Beranda</a></li>
-				<li class="menu__item  <?php if($page == "tentangkami") echo "menu__item--current" ?>"><a href="tentang_kami.php" style="<?php if($page == "tentangkami") echo "color: #c59c45;" ?>">Tentang Kami</a></li>
-				<li class="menu__item  <?php if($page == "produk") echo "menu__item--current" ?>"><a href="produk.php" style="<?php if($page == "produk") echo "color: #c59c45;" ?>">Produk</a></li>
-				<li class="menu__item  <?php if($page == "informasi") echo "menu__item--current" ?>"><a href="informasi.php" style="<?php if($page == "informasi") echo "color: #c59c45;" ?>">Informasi</a></li>
-				<li class="menu__item  <?php if($page == "partner") echo "menu__item--current" ?>"><a href="partner.php" style="<?php if($page == "partner") echo "color: #c59c45;" ?>">Partner</a></li>
-				<li class="menu__item  <?php if($page == "contact") echo "menu__item--current" ?>"><a href="contact.php" style="<?php if($page == "contact") echo "color: #c59c45;" ?>">Kontak</a></li>
+				<?php
+				
+				foreach ($koneksi->get_show() as $show) {
+					
+				?>
+					<li class="menu__item <?php if($show['kd_menu'] == $page) echo "menu__item--current" ?>"><a href="index.php" style="<?php if($show['kd_menu'] == $page) echo "color: #c59c45;" ?>"><?= $show['nm_menu'] ?></a></li>
+				
+				<?php
+					}
+				?>
+				
 				<form action="" class="search-input1" style="margin-left: 10px; padding-top: 10px;">
 					<input type="text" class="form-control input_search" placeholder="Cari Berita ...">
 					<button class="btn btn-sm input-icon"><i class="fa fa-magnifying-glass" style="color: gold;"></i> </button>

@@ -276,7 +276,7 @@
 		</li>
 		</ul>
 	</nav>
-<!-- end pagination -->
+	<!-- end pagination -->
 
 
 <?php 
