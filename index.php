@@ -23,39 +23,27 @@
 	  
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
-		  <div class="item active">
-			<img src="assets/images/tembakau.jpg" class="img-hp slider-bg" style="filter: brightness(35%);">
+			<?php 
+			
+				foreach ($koneksi->get_banner() as $banner){
+
+			?>
+		  <div class="item <?php if($banner['id'] == 1) echo "active" ?>">
+			<img src="assets/images/<?= $banner['gambar_banner'] ?>" class="img-hp slider-bg" style="filter: brightness(35%);">
 			<div class="carousel-caption">
-				<h4 style="font-weight: 300; font-size: 20pt;">Bidang Agri Bisnis</h4>
-				<h5 class="text-size">PERUMDA ANEKA USAHA</h5>
-				<h5 class="text-size">KABUPATEN JEPARA</h5>
+				<h4 style="font-weight: 300; font-size: 20pt;"><?= $banner['judul1'] ?></h4>
+				<h5 class="text-size"><?= $banner['judul2']?></h5>
+				<h5 class="text-size"><?= $banner['judul3']?></h5>
 				<button href="" class="btn btn-lg hvr-sweep-to-top chat-btn text-white">
 					<img src="assets/images/icon/whatsapp (1).png" alt="" style="width: 30px; height: 30px; display: inline-flex; margin-right: 10px;">Chat With Us
 				</button>
 			</div>
 		  </div>
-		  <div class="item">
-			<img src="assets/images/singkong2.jpg" class="img-hp slider-bg" style="filter: brightness(35%);">
-			<div class="carousel-caption">
-				<h4 style="font-weight: 300; font-size: 20pt;">Bidang Agri Bisnis</h4>
-				<h5 class="text-size">PERUMDA ANEKA USAHA</h5>
-				<h5 class="text-size">KABUPATEN JEPARA</h5>
-				<button href="" class="btn btn-lg hvr-sweep-to-top chat-btn text-white">
-					<img src="assets/images/icon/whatsapp (1).png" alt="" style="width: 30px; height: 30px; display: inline-flex; margin-right: 10px;">Chat With Us
-				</button>
-			</div>
-		  </div>
-		  <div class="item">
-			<img src="assets/images/tembakau2.jpg" class="img-hp slider-bg" style="filter: brightness(35%);">
-			<div class="carousel-caption">
-				<h4 style="font-weight: 300; font-size: 20pt;">Bidang Agri Bisnis</h4>
-				<h5 class="text-size">PERUMDA ANEKA USAHA</h5>
-				<h5 class="text-size">KABUPATEN JEPARA</h5>
-				<button href="" class="btn btn-lg hvr-sweep-to-top chat-btn text-white">
-					<img src="assets/images/icon/whatsapp (1).png" alt="" style="width: 30px; height: 30px; display: inline-flex; margin-right: 10px;">Chat With Us
-				</button>
-			</div>
-		  </div>
+		  <?php 
+		  
+				}
+
+		  ?>
 		</div>
 	  
 		<!-- Controls -->
@@ -182,13 +170,17 @@
 				<h3 class="fw-bold">Info & <span class="text-green">Pengumuman</span></h3>
 				<hr class="hr-row">
 				<div class="categories" style="border-radius: 5px;">
-					<div class="card scroll-news" style="padding-bottom: 0; border: none;">
-						<div class="card mb-1" style="padding-bottom: 0; border: none;">
-							<div class="card-body" style="padding-bottom: 0rem; padding-top: 1rem;">
+						<?php 
+			
+						foreach ($koneksi->get_berita() as $berita){
+
+						?>
+						<div class="card" style="padding-bottom: 0; border: none; margin-top: 10px;">
+							<div class="card-body" style="padding-bottom: 0rem; padding-top: 0rem;">
 								<div class="card border-0">
 									<div class="row g-1">
 										<div class="col-12 col-md-4 col-lg-4" style="padding:0px 0px 5px 0px;">
-											<img src="assets/images/tembakau.jpg" class="rounded-3 shadow-sm img-fluid w-100" style="height: 160px; object-fit: cover;filter:brightness(70%)">
+											<img src="assets/images/<?= $berita['gambar_berita'] ?>" class="rounded-3 shadow-sm img-fluid w-100" style="height: 160px; object-fit: cover;filter:brightness(70%)">
 										</div>
 										<div class="col-12 col-md-8 col-lg-8 " style="height: 180px; padding:0px 15px;">
 											<div class="card-body mb-3 text-media " style="padding:0px;">
@@ -198,11 +190,10 @@
 													<span class="float-end"><i class="fa fa-ellipsis-vertical"></i></span>
 												</p>
 												<h4 class="" style="font-weight: 700;">
-													<a href="detail_berita.php" class="text-decoration-none hover-costume" style="font-weight: bold; padding-top: 10px;">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin ...
+													<a href="detail_berita.php" class="text-decoration-none hover-costume text-overflow: ellipsis;" style="font-weight: bold; padding-top: 10px;"><?= $berita['judul_berita'] ?>
 													</a>
 												</h4>
-												<p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ...
-												</p>
+												<p class="text-truncate"><?= $berita['isi_berita'] ?></p>
 												<a href="detail_berita.php" class="hover-costume"><small><b>Lanjutkan membaca »</b></small></a>
 											</div>
 										</div>
@@ -210,6 +201,10 @@
 								</div>
 							</div>
 						</div>
+						<?php 
+							}
+						?>
+					
 						<div class="card mb-1" style="padding-bottom: 0; border: none;">
 							<div class="card-body" style="padding-bottom: 0rem; padding-top: 0rem;">
 								<div class="card border-0">

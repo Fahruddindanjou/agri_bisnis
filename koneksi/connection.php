@@ -20,7 +20,8 @@
     }
 
 
-    public function get_show(){
+    public function get_show()
+        {
         
             $data = "SELECT * from tbl_menu ORDER BY id ASC";
             $hasil = $this->koneksi->query($data);
@@ -31,6 +32,48 @@
             return $result;
         }
 
+    public function get_banner()
+    {
+            $data = "SELECT * from tbl_banner ORDER BY id ASC";
+            $hasil = $this->koneksi->query($data);
+            
+            while ($d = mysqli_fetch_array($hasil)){
+                $result[] = $d;
+            }
+            return $result;
+    }
+
+    public function get_berita()
+    {
+        $data = "SELECT * from detail_main_berita ORDER BY id ASC";
+        $hasil = $this->koneksi->query($data);
+
+        while ($d = mysqli_fetch_array($hasil)){
+            $result[] = $d;
+        }
+        return $result;
+    }
+
+    public function get_kontak()
+    {
+        $data = "SELECT * from tbl_kontak ORDER BY id ASC";
+        $hasil = $this->koneksi->query($data);
+
+        while ($d = mysqli_fetch_array($hasil)){
+            $result[] = $d;
+        }
+        return $result;
+    }
+    public function get_produk()
+    {
+        $data = "SELECT * from produk ORDER BY id ASC";
+        $hasil = $this->koneksi->query($data);
+
+        while ($d = mysqli_fetch_array($hasil)){
+            $result[] = $d;
+        }
+        return $result;
+    }
 }
 
 ?>

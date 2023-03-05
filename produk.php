@@ -84,22 +84,32 @@
             <div class="col-md-8">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="ternak">
+                        <?php 
+                        
+                            foreach($koneksi->get_produk() as $produks){
+
+                        ?>
                         <a href="detail_produk.php" class="text-dark">
                         <div class="col-md-4 mb-1">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
-                                        <img src="assets/images/2.jpg" class="card-img-top " style="max-height: 50%;">
+                                        <img src="assets/images/<?= $produks['gambar_produk'] ?>" class="card-img-top " style="max-height: 50%;">
                                     </div>
                                     <div class="card-body text-left">
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Kambing</p>
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.1.115.000 / Ekor</p>
-                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"><?= $produks['nm_menu'] ?></p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"><?= $produks['harga_produk'] ?>  / Ekor</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> <?= $produks['lokasi'] ?></p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> <?= $produks['rating_produk'] ?> | <?= $produks['terjual'] ?>rb </p>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
+                    <?php
+
+                        }
+
+                    ?>
                     <div role="tabpanel" class="tab-pane" id="sayuran">
                         <div class="col-md-4 mb-1">
                             <a href="detail_produk.php" class="text-dark">
