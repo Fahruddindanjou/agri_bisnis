@@ -47,12 +47,16 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right text-center" style="align-items: center;">
+
+				<?php
+				// $no= 0;
+				?>
 				<?php
 				
 				foreach ($koneksi->get_show() as $show) {
 					
 				?>
-					<li class="menu__item <?php if($show['kd_menu'] == $page) echo "menu__item--current" ?>"><a href="index.php" style="<?php if($show['kd_menu'] == $page) echo "color: #c59c45;" ?>"><?= $show['nm_menu'] ?></a></li>
+					<li class="menu__item <?php if($show['kd_menu'] == $page) echo "menu__item--current" ?>"><a href="<?= $show['kd_menu']?>.php" style="<?php if($show['kd_menu'] == $page) echo "color: #c59c45;" ?>"><?= $show['nm_menu'] ?></a></li>
 				
 				<?php
 					}

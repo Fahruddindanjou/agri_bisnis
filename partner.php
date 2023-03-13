@@ -46,21 +46,29 @@
         <h3 class="text-center mb-1">PARTNER KAMI</h3>
         <div style="padding-bottom: 40px;">
             <div class="row1">
+                <?php 
+                    
+                    foreach($koneksi->get_partner() as $partner){
+
+                ?>
                 <div class="col-lg-4 mb-3">
                     <div class="card shadow-sm ">
                         <div class="card-header text-center" style="margin-top: 10px;">
-                            <img src="assets/images/partner1.png" class="img-fluid" alt="">
+                            <img src="assets/images/<?= $partner['logo_partner']?>" class="img-fluid" alt="">
                         </div>
                         <div class="card-body text-center">
-                            <h4>Toko Makmur Sejahtera</h4>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, est. <br> 
-                                <a href="#" class="text-green">www.makmursejahtera.com</a>
+                            <h4><?= $partner['nm_partner']?></h4>
+                            <p class="mb-1"><?= $partner['detail_partner']?> <br> 
+                                <a href="#" class="text-green"><?= $partner['url_partner']?></a>
                             </p>
                             <a href="detail_partner.php" class="text-green fw-bold">Show Partner <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3">
+                <?php
+                    }
+                ?>
+                <!-- <div class="col-lg-4 mb-3">
                     <div class="card shadow-sm ">
                         <div class="card-header text-center" style="margin-top: 10px;">
                             <img src="assets/images/partner2.png" class="img-fluid"  alt="">
@@ -88,7 +96,7 @@
                             <a href="detail_partner.php" class="text-green fw-bold">Show Partner <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
        

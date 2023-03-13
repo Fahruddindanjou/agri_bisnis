@@ -74,6 +74,26 @@
         }
         return $result;
     }
+    public function get_categori()
+    {
+        $data = "SELECT * FROM produk_kategori ORDER BY id ASC";
+        $hasil = $this->koneksi->query($data);
+
+        while ($d = mysqli_fetch_array($hasil)){
+            $result[] = $d;
+        }
+        return $result;
+    }
+    public function get_partner()
+    {
+        $data = "SELECT * FROM tbl_partner ORDER BY id DESC";
+        $hasil = $this->koneksi->query($data);
+
+        while ($d = mysqli_fetch_array($hasil)){
+            $result[] = $d;
+        }
+        return $result;
+    }
 }
 
 ?>

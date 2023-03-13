@@ -84,11 +84,12 @@
             <div class="col-md-8">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="ternak">
-                        <?php 
+                    <?php 
                         
-                            foreach($koneksi->get_produk() as $produks){
+                        foreach($koneksi->get_produk() as $produks){
 
-                        ?>
+                    ?>
+                    <?php if($produks['id'] == "2"){?>
                         <a href="detail_produk.php" class="text-dark">
                         <div class="col-md-4 mb-1">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
@@ -104,75 +105,74 @@
                                 </div>
                             </div>
                         </a>
+                        <?php
+    
+                            }
+    
+                        ?>
+    
+                        <?php } ?>
                     </div>
-                    <?php
+
+                    <div role="tabpanel" class="tab-pane" id="sayuran">
+                        <?php 
+                            
+                            foreach($koneksi->get_produk() as $produks){
+    
+                        ?>
+                        <?php if($produks['id'] == "1"){?>
+                        <div class="col-md-4 mb-1">
+                            <a href="detail_produk.php" class="text-dark">
+                                <div class="card shadow-sm" style="border-radius: 5px;">
+                                    <div style=" justify-items: center;">
+                                        <img src="assets/images/<?= $produks['gambar_produk'] ?>" alt="" class="card-img-top " style="max-height: 50%;">
+                                    </div>
+                                    <div class="card-body text-left">
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"><?= $produks['nm_menu'] ?></p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> <?= $produks['harga_produk'] ?> / kg</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> <?= $produks['lokasi'] ?></p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> <?= $produks['rating_produk'] ?> | <?= $produks['terjual'] ?>rb </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <?php
 
                         }
 
-                    ?>
-                    <div role="tabpanel" class="tab-pane" id="sayuran">
-                        <div class="col-md-4 mb-1">
-                            <a href="detail_produk.php" class="text-dark">
-                                <div class="card shadow-sm" style="border-radius: 5px;">
-                                    <div style=" justify-items: center;">
-                                        <img src="assets/images/Brokoli.jpg" alt="" class="card-img-top " style="max-height: 50%;">
-                                    </div>
-                                    <div class="card-body text-left">
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Brokoli</p>
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4 mb-1">
-                            <a href="detail_produk.php" class="text-dark">
-                                <div class="card shadow-sm" style="border-radius: 5px;">
-                                    <div style=" justify-items: center;">
-                                        <img src="assets/images/selada.jpg" alt="" class="card-img-top " style="max-height: 50%;">
-                                    </div>
-                                    <div class="card-body text-left">
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Selada</p>
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.10.500 / Ikat</p>
-                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        ?>
+
+                        <?php } ?>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="buah">
+                        <?php 
+                            
+                            foreach($koneksi->get_produk() as $produks){
+    
+                        ?>
+                        <?php if($produks['id'] == "3"){?>
                         <div class="col-md-4 mb-1">
                             <a href="" class="text-dark">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
-                                        <img src="assets/images/pepaya.png" alt="" class="card-img-top " style="max-height: 50%;">
+                                        <img src="assets/images/<?= $produks['gambar_produk'] ?>" alt="" class="card-img-top " style="max-height: 50%;">
                                     </div>
                                     <div class="card-body text-left">
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pepaya</p>
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"><?= $produks['nm_menu'] ?></p>
+                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"><?= $produks['harga_produk'] ?> / kg</p>
+                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> <?= $produks['lokasi'] ?></p>
+                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> <?= $produks['rating_produk'] ?> | <?= $produks['terjual'] ?>rb+ </p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 mb-1">
-                            <a href="detail_produk.php" class="text-dark">
-                                <div class="card shadow-sm" style="border-radius: 5px;">
-                                    <div style=" justify-items: center;">
-                                        <img src="assets/images/pisang.png" alt="" class="card-img-top " style="max-height: 50%;">
-                                    </div>
-                                    <div class="card-body text-left">
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;">Pisang Ambon</p>
-                                        <p class="fw-bold text-dark" style="margin-bottom: 3px;"> Rp.15.000 / kg</p>
-                                        <p class=" text-dark"><i class="fa fa-location-dot"></i> Perumda Jepara</p>
-                                        <p style="color: #2525259c;"><i class="fa fa-star" style="font-size: smaller; color: gold;"></i> 5.0 | terjual 10rb+ </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <?php
+
+                        }
+
+                        ?>
+
+                        <?php } ?>
                     </div>
                 </div>
             </div>
