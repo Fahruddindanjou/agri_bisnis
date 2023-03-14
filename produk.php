@@ -152,7 +152,7 @@
                         ?>
                         <?php if($produks['id'] == "3"){?>
                         <div class="col-md-4 mb-1">
-                            <a href="" class="text-dark">
+                            <a href="detail_produk.php" class="text-dark">
                                 <div class="card shadow-sm" style="border-radius: 5px;">
                                     <div style=" justify-items: center;">
                                         <img src="assets/images/<?= $produks['gambar_produk'] ?>" alt="" class="card-img-top " style="max-height: 50%;">
