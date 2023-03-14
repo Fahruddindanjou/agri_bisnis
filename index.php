@@ -288,7 +288,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			<div class="col-md-4 col-12">
 				<h4 class="fw-normal">Media Sosial</h4>
 				<h3 class="fw-bold">Media <span class="text-green">Instagram</span></h3>
@@ -389,6 +388,7 @@
 					</div>
 					<!-- end coba instagram -->
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>
